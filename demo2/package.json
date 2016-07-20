@@ -1,0 +1,27 @@
+{
+  "name": "ngconnect",
+  "version": "0.1.0",
+  "description": "Demo Angular2 project",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billti/ngConnect.git"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-alpha.44",
+    "express": "^4.13.3",
+    "react": "^0.13.0",
+    "systemjs": "^0.19.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "typescript",
+    "connect"
+  ],
+  "author": "Bill Ticehurst",
+  "license": "MIT"
+}

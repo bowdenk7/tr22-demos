@@ -1,0 +1,54 @@
+body {
+    font-family: Helvetica, Verdana, sans-serif
+}
+
+.itemList {
+	display: inline-block;
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.itemList li {
+	border-bottom: 1px solid gray;
+	padding: 5px;
+}
+
+.itemList li span {
+	display: inline-block;
+}
+
+.itemName {
+	width: 125px;
+	text-align: left;
+}
+
+.itemWeight {
+	width: 75px;
+	text-align: right;
+}
+
+.itemAmount {
+	width: 75px;
+	text-align: right;
+}
+
+.itemTotal {
+	width: 75px;
+	text-align: right;
+}
+
+.totalText {
+	font-weight: bold;
+	width: 67px;
+	text-align: left;
+}
+
+.itemsTotal {
+	width: 300px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.itemOver {
+	background: red;
+}
