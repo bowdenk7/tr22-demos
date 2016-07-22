@@ -1,4 +1,4 @@
-Object.defineProperty(window, "HelloTypeScript", { value: "v1.0.0", writable: true });
+Object.defineProperty(window, "HelloTypeScript", { value: "v1.0.0", readonly: false });
 function deliveryMethod() {
     var deliveryElement = document.querySelectorAll('#deliveryMethod');
     if (deliveryElement) {
@@ -14,9 +14,9 @@ function shipWeight() {
 /*
  * @param {(string | string[])} emailAddr - An email address of array of email addresses
  */
-function sendUpdates(emailAddr: string | string[]) {
+function sendUpdates(emailAddr) {
     function sendEmail(addr) {
-        if (shipWeight() > 100) {
+        if (shipWeight > 100) {
             console.log("WARNING: Oversize package");
         }
     }
@@ -25,7 +25,7 @@ function sendUpdates(emailAddr: string | string[]) {
 
     // If its an array, loop over it
     if (Array.isArray(emailAddr)) {
-        emailAddr.forEach(function (idx, val) {
+        emailAddr.forEach(function (val, idx) {
             sendEmail(val.trim());
         });
     }
@@ -33,9 +33,3 @@ function sendUpdates(emailAddr: string | string[]) {
         sendEmail(emailAddr.trim());
     }
 }
-
-// add classes to demo
-// create customer class with props
-// autocomplete of class
-// allude to third party lib intellisense
-class Foo{}
